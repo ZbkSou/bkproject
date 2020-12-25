@@ -1,2 +1,3 @@
-include ':app', ':lib_network', ':lib_base', ':lib_db'
+include ':ft_login'
+include ':app', ':lib_network', ':lib_base'
 rootProject.name='bkproject'

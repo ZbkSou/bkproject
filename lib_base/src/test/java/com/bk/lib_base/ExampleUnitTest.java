@@ -1,4 +1,4 @@
-package com.zbk.lib_base;
+package com.bk.lib_base;
 
 import org.junit.Test;
 
