@@ -18,6 +18,11 @@ public class LogUtil {
             logSplit(TAG, content, 1);
         }
     }
+    public static void show(String tag,String content) {
+        if (BuildConfig.DEBUG) {
+            logSplit(tag, content, 1);
+        }
+    }
 
     public static void logSplit(String explain, String message, int i) {
         //TODO 添加非debug下不打印日志

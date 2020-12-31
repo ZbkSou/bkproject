@@ -1,3 +1,4 @@
+include ':ft_load'
 include ':ft_weather'
 include ':ft_login'
 include ':app', ':lib_network', ':lib_base'
