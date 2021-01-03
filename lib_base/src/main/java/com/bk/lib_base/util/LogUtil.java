@@ -2,6 +2,8 @@ package com.bk.lib_base.util;
 
 import android.util.Log;
 
+import com.bk.lib_base.BuildConfig;
+
 public class LogUtil {
 
 

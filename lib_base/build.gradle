@@ -9,6 +9,11 @@ android {
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         consumerProguardFiles "consumer-rules.pro"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
     }
 
     buildTypes {
@@ -38,4 +43,11 @@ dependencies {
     implementation 'org.jetbrains:annotations:15.0'
 
 
+    //网络请求库
+    api project(':lib_network')
+    //arouter库
+    implementation(rootProject.ext.dependencies.arouterapi) {
+        exclude group: 'com.android.support'
+    }
+    annotationProcessor rootProject.ext.dependencies.aroutercompiler
 }

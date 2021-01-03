@@ -11,7 +11,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [moduleName: project.getName()]
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
             }
         }
     }
@@ -39,4 +39,11 @@ dependencies {
 
     //网络请求库
     implementation project(':lib_network')
+
+    //基础库
+    implementation project(':lib_base')
+
+    implementation project(':ft_login' +
+            '' +
+            '')
 }
