@@ -28,7 +28,7 @@ public class HomeActivity extends BaseActivity implements HomeContract.HomeView 
             public void onClick(View view) {
 
                 LogUtil.show("tx click");
-                ARouter.getInstance().build(Constance.ACTIVITY_URL_LOGIN).navigation();
+
             }
         });
         prestener = new HomePrestenerImpl(this);

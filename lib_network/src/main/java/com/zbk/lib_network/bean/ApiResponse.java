@@ -9,11 +9,10 @@ public class ApiResponse<T> {
 
     public static final int CODE_SUCCESS = 0;
     public static final int CODE_ERROR = 1;
-
     private int errorCode; //状态码
     private String errorMsg; //信息
     private T data; //数据
-
+    private String status; //状态码
     public ApiResponse(int code, String msg) {
         this.errorCode = code;
         this.errorMsg = msg;
@@ -59,6 +58,13 @@ public class ApiResponse<T> {
     }
 
     public boolean isSuccess() {
+        if(status!=null){
+            if(status.equals("ok")){
+                return true;
+            }else {
+                return false;
+            }
+        }
         if (errorCode == 0) {
             return true;
         } else {

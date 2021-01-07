@@ -128,6 +128,9 @@ public class LogUtil {
      * @return 分割后的数组
      */
     private String[] splitStr(String str) {
+        if(str==null){
+            str ="null";
+        }
         //字符串长度
         int length = str.length();
         //返回的数组

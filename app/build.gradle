@@ -44,4 +44,6 @@ dependencies {
     implementation project(':lib_base')
 
     implementation project(':ft_login' )
+
+    implementation project(':ft_weather')
 }

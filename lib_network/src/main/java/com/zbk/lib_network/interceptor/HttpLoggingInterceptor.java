@@ -6,6 +6,7 @@ import com.zbk.lib_network.util.LogUtil;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import okhttp3.Connection;
@@ -29,8 +30,8 @@ public class HttpLoggingInterceptor implements Interceptor {
 
     private static final Charset UTF8 = Charset.forName("UTF-8");
 
-    private volatile Level printLevel = Level.NONE;
-    private java.util.logging.Level colorLevel;
+    private volatile Level printLevel = Level.BASIC;
+
     private Logger logger;
 
     public enum Level {
@@ -44,18 +45,9 @@ public class HttpLoggingInterceptor implements Interceptor {
         logger = Logger.getLogger(tag);
     }
 
-    public void setPrintLevel(Level level) {
-        if (printLevel == null)
-            throw new NullPointerException("printLevel == null. Use Level.NONE instead.");
-        printLevel = level;
-    }
-
-    public void setColorLevel(java.util.logging.Level level) {
-        colorLevel = level;
-    }
 
     private void log(String message) {
-        logger.log(colorLevel, message);
+        logger.log(java.util.logging.Level.INFO, message);
     }
 
     @Override
