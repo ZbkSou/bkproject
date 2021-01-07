@@ -7,8 +7,9 @@
     <application>
 
         <activity
-            android:name=".view.home.HomeActivity"
+            android:name=".HomeActivity"
             android:launchMode="singleTask" />
+
 
 
     </application>

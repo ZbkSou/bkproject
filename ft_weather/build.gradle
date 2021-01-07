@@ -34,13 +34,16 @@ android {
 }
 
 dependencies {
-
+    implementation(rootProject.ext.dependencies.appcompat)
 //arouter库
     compileOnly(rootProject.ext.dependencies.arouterapi) {
         exclude group: 'com.android.support'
     }
     annotationProcessor rootProject.ext.dependencies.aroutercompiler
-
+    api rootProject.ext.dependencies.rxJava
+    api rootProject.ext.dependencies.rxAndroid
     //网络请求库
     implementation project(':lib_network')
+    //基础库
+    implementation project(':lib_base')
 }

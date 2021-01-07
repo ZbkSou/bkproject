@@ -1,4 +1,4 @@
-package com.bk.lib_base.bean;
+package com.bk.ft_weather.bean;
 
 public class RealtimeWeather {
 

@@ -1,9 +1,12 @@
 package com.zbk.lib_network.api;
 
+import android.util.Log;
+
 import com.zbk.lib_network.config.Configurator;
 import com.zbk.lib_network.interceptor.AddHeadersInterceptor;
 import com.zbk.lib_network.interceptor.HttpLoggingInterceptor;
 import com.zbk.lib_network.interceptor.MoreBaseUrlInterceptor;
+import com.zbk.lib_network.util.LogUtil;
 
 import java.util.concurrent.TimeUnit;
 
@@ -44,6 +47,9 @@ public class RetrofitCreateHelper {
     }
 
     public Retrofit getRetrofit() {
+        if(mRetrofit==null){
+            Log.e("RetrofitCreateHelper","需要初始化RetrofitCreateHelper");
+        }
         return mRetrofit;
     }
 

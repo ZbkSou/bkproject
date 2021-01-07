@@ -44,25 +44,6 @@ public class BasePresenter<T extends IBaseView> implements LifecycleObserver {
 
     }
 
-    @OnLifecycleEvent(Lifecycle.Event.ON_START)
-    public void onStart(){
-
-    }
-
-    @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
-    public void onResume(){
-
-    }
-
-    @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
-    public void onPause(){
-
-    }
-
-    @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
-    public void onStop(){
-
-    }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     public void onDestroy(){

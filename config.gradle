@@ -17,6 +17,7 @@ ext {
     ]
     dependencies = [
 
+            appcompat : "androidx.appcompat:appcompat:1.2.0",
             /*rxJava + retrofit -----start*/
             retrofitConvertGson   : "com.squareup.retrofit2:converter-gson:${libsVersion.retrofit_version}",
             retrofitConvertScalars: "com.squareup.retrofit2:converter-scalars:${libsVersion.retrofit_version}",
@@ -33,6 +34,7 @@ ext {
             lifecycle :"android.arch.lifecycle:runtime:1.0.0-alpha1",
             lifecycleExtensions :"android.arch.lifecycle:extensions:1.0.0-alpha1",
             lifecycleCompiler : "android.arch.lifecycle:compiler:1.0.0-alpha1"
+
     ]
 
 }
