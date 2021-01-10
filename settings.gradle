@@ -1,4 +1,4 @@
-include ':ft_load'
+include ':ft_load', ':lib_qrcode'
 include ':ft_weather'
 include ':ft_login'
 include ':app', ':lib_network', ':lib_base'
