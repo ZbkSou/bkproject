@@ -1,13 +1,22 @@
 package com.zbk.lib_qrcode.app;
 
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.preference.CheckBoxPreference;
 import android.preference.PreferenceActivity;
+import android.preference.PreferenceScreen;
+
+import com.zbk.lib_qrcode.R;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * Created by ZBK on 2021-01-11.
  *
  * @function
  */
-public final class PreferencesActivity extends PreferenceActivity implements OnSharedPreferenceChangeListener
+public final class PreferencesActivity extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener
 {
 
     public static final String KEY_DECODE_1D = "preferences_decode_1D";
