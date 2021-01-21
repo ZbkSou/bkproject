@@ -51,4 +51,6 @@ dependencies {
     implementation project(':ft_login' )
 
     implementation project(':ft_weather')
+
+    implementation project(':ft_loading')
 }

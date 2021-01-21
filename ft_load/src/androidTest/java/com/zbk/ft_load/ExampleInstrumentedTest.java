@@ -1,4 +1,4 @@
-package com.bk.ft_load;
+package com.zbk.ft_load;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.bk.ft_load.test", appContext.getPackageName());
+        assertEquals("com.zbk.ft_load.test", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.bk.ft_load;
+package com.zbk.ft_load;
 
 import org.junit.Test;
 

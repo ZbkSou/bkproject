@@ -1,3 +1,5 @@
+include ':ft_load'
+include ':ft_loading'
 include ':ft_load', ':lib_qrcode', ':lib_commin_ui', ':lib_image_loader'
 include ':ft_weather'
 include ':ft_login'
