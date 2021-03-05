@@ -7,8 +7,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import com.imooc.lib_commin_ui.recyclerview.base.ViewHolder;
-import com.imooc.lib_commin_ui.recyclerview.utils.WrapperUtils;
+import com.zbk.lib_commin_ui.recyclerview.base.ViewHolder;
+import com.zbk.lib_commin_ui.recyclerview.utils.WrapperUtils;
+
 
 public class LoadMoreWrapper<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public static final int ITEM_TYPE_LOAD_MORE = Integer.MAX_VALUE - 2;

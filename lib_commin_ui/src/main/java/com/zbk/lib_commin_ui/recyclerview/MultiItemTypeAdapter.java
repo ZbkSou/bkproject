@@ -6,9 +6,11 @@ import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.imooc.lib_commin_ui.recyclerview.base.ItemViewDelegate;
-import com.imooc.lib_commin_ui.recyclerview.base.ItemViewDelegateManager;
-import com.imooc.lib_commin_ui.recyclerview.base.ViewHolder;
+
+import com.zbk.lib_commin_ui.recyclerview.base.ItemViewDelegate;
+import com.zbk.lib_commin_ui.recyclerview.base.ItemViewDelegateManager;
+import com.zbk.lib_commin_ui.recyclerview.base.ViewHolder;
+
 import java.util.List;
 
 public class MultiItemTypeAdapter<T> extends RecyclerView.Adapter<ViewHolder> {

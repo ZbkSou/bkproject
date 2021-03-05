@@ -23,16 +23,19 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewOutlineProvider;
-import android.widget.ImageView;
+
+
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.widget.AppCompatImageView;
 
-import com.imooc.lib_commin_ui.R;
+import com.zbk.lib_commin_ui.R;
 
-@SuppressWarnings("UnusedDeclaration") public class CircleImageView extends ImageView {
+
+@SuppressWarnings("UnusedDeclaration") public class CircleImageView extends AppCompatImageView {
 
   private static final ScaleType SCALE_TYPE = ScaleType.CENTER_CROP;
 

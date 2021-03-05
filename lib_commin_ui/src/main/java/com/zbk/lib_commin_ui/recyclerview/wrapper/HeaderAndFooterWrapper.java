@@ -7,8 +7,9 @@ import androidx.collection.SparseArrayCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.imooc.lib_commin_ui.recyclerview.base.ViewHolder;
-import com.imooc.lib_commin_ui.recyclerview.utils.WrapperUtils;
+import com.zbk.lib_commin_ui.recyclerview.base.ViewHolder;
+import com.zbk.lib_commin_ui.recyclerview.utils.WrapperUtils;
+
 
 public class HeaderAndFooterWrapper<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int BASE_ITEM_TYPE_HEADER = 100000;

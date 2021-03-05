@@ -2,8 +2,10 @@ package com.zbk.lib_commin_ui.recyclerview;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import com.imooc.lib_commin_ui.recyclerview.base.ItemViewDelegate;
-import com.imooc.lib_commin_ui.recyclerview.base.ViewHolder;
+
+import com.zbk.lib_commin_ui.recyclerview.base.ItemViewDelegate;
+import com.zbk.lib_commin_ui.recyclerview.base.ViewHolder;
+
 import java.util.List;
 
 public abstract class CommonAdapter<T> extends MultiItemTypeAdapter<T> {

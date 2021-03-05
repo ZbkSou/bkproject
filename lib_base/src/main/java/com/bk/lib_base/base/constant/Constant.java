@@ -1,4 +1,4 @@
-package com.zbk.lib_commin_ui.base.constant;
+package com.bk.lib_base.base.constant;
 
 import android.Manifest;
 
